@@ -22,12 +22,11 @@ def load_schemes():
 
 def build_voice_text(name: str, data: dict) -> str:
     return (
-        f"{name} పథకం గురించి సమాచారం. "
-        f"అర్హత: {data['eligibility_te']}. "
-        f"ప్రయోజనాలు: {data['benefits_te']}. "
+        f"{name} పథకానికి సంబంధించిన వివరాలు. "
+        f"ఈ పథకం అర్హతలు: {data['eligibility_te']}. "
+        f"ప్రధాన ప్రయోజనాలు: {data['benefits_te']}. "
         f"అవసరమైన పత్రాలు: {data['documents_te']}. "
-        f"దరఖాస్తు దశలు: {data['steps_te']}"
-    )
+        f"దరఖాస్తు చేయాల్సిన దశలు: {data['steps_te']}.")
 
 
 def generate_audio_for_scheme(name: str, data: dict) -> None:
