@@ -5,103 +5,177 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        :root {
+            color-scheme: light;
+            --bg: #eaf4ff;
+            --surface: rgba(255,255,255,0.92);
+            --surface-strong: #ffffff;
+            --border: rgba(148, 163, 184, 0.22);
+            --text: #0f172a;
+            --muted: #475569;
+            --accent: #2563eb;
+            --accent-soft: #dbeafe;
+            --shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
+        }
+        * {
+            box-sizing: border-box;
+        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            padding: 20px;
-            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            padding: 0;
+            background: radial-gradient(circle at top, #f8fbff 0%, #e2efff 35%, #e8f2ff 100%);
             min-height: 100vh;
+            color: var(--text);
         }
-        .container {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        .page {
+            width: min(1100px, calc(100% - 32px));
+            margin: 0 auto;
+            padding: 32px 0 48px;
         }
-        h1 {
-            color: #1e3a8a;
-            text-align: center;
-            margin-bottom: 5px;
+        .hero {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 30px;
+            box-shadow: var(--shadow);
+            padding: 32px 36px;
+            margin-bottom: 28px;
+            backdrop-filter: blur(12px);
         }
-        .subtitle {
-            text-align: center;
-            color: #475569;
-            margin-bottom: 30px;
+        .hero h1 {
+            margin: 0 0 10px;
+            font-size: clamp(2.5rem, 3vw, 3.4rem);
+            letter-spacing: -0.04em;
+            color: #1f2937;
+        }
+        .hero p {
+            margin: 0;
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.8;
+            max-width: 780px;
+        }
+        .input-card {
+            display: grid;
+            gap: 16px;
+            background: var(--surface-strong);
+            border: 1px solid var(--border);
+            border-radius: 26px;
+            padding: 24px;
+            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
+            margin-bottom: 28px;
         }
         .input-group {
             display: flex;
-            gap: 10px;
+            gap: 14px;
             flex-wrap: wrap;
-            justify-content: center;
-            margin-bottom: 20px;
+            align-items: center;
         }
-        select, button {
-            padding: 12px 20px;
-            font-size: 16px;
-            border-radius: 10px;
-            border: 1px solid #cbd5e1;
-        }
-        select {
-            flex: 2;
-            min-width: 250px;
+        .input-group select {
+            flex: 1;
+            min-width: 240px;
+            border: 1px solid rgba(148, 163, 184, 0.35);
+            border-radius: 16px;
+            padding: 14px 16px;
             background: white;
-            cursor: pointer;
+            box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05);
+            font-size: 1rem;
+            color: var(--text);
         }
-        button {
-            background: #1e3a8a;
-            color: white;
+        .input-group button {
+            min-width: 220px;
+            padding: 14px 18px;
+            border-radius: 16px;
             border: none;
             cursor: pointer;
-            transition: background 0.3s;
+            font-size: 1rem;
+            font-weight: 600;
+            color: white;
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            box-shadow: 0 16px 30px rgba(37, 99, 235, 0.22);
+            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
         }
-        button:hover {
-            background: #3b82f6;
+        .input-group button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 20px 36px rgba(37, 99, 235, 0.25);
+        }
+        .info-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(37, 99, 235, 0.08);
+            color: #1e40af;
+            border-radius: 999px;
+            padding: 10px 16px;
+            font-size: 0.95rem;
+            width: fit-content;
+        }
+        .result-grid {
+            display: grid;
+            gap: 22px;
         }
         .card {
-            background: #f8fafc;
-            margin: 15px 0;
-            padding: 15px;
-            border-radius: 12px;
-            border-left: 5px solid #3b82f6;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
+            border: 1px solid rgba(148, 163, 184, 0.14);
+            padding: 22px;
         }
         .card h4 {
-            margin-top: 0;
-            color: #1e293b;
+            margin: 0 0 12px;
+            font-size: 1.05rem;
+            color: #0f172a;
+        }
+        .card p {
+            margin: 0;
+            color: #334155;
+            line-height: 1.8;
         }
         .audio-container {
-            background: #eef2ff;
-            padding: 15px;
-            border-radius: 12px;
+            background: #eff6ff;
+            border-radius: 24px;
+            border: 1px solid rgba(37, 99, 235, 0.18);
+            padding: 24px;
             text-align: center;
-            margin-top: 20px;
+            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+        }
+        .audio-container strong {
+            display: block;
+            margin-bottom: 14px;
+            font-size: 1rem;
+            color: #1e3a8a;
         }
         audio {
             width: 100%;
-            max-width: 400px;
+            max-width: 560px;
+            border-radius: 14px;
+            outline: none;
         }
-        .lang-badge {
-            display: inline-block;
-            background: #3b82f6;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 12px;
-            margin-right: 10px;
-        }
-        hr {
-            margin: 20px 0;
-        }
-        footer {
+        .footer {
             text-align: center;
-            margin-top: 30px;
-            font-size: 12px;
-            color: #64748b;
+            margin-top: 36px;
+            color: var(--muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
         }
-        @media (max-width: 600px) {
-            .container { padding: 15px; }
-            select, button { width: 100%; }
+        .footer a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        .loader {
+            padding: 26px 0;
+            color: #334155;
+            text-align: center;
+            font-weight: 600;
+        }
+        @media (max-width: 760px) {
+            .page { padding: 24px 0 36px; }
+            .hero { padding: 26px 24px; }
+            .input-card { padding: 20px; }
+            .input-group { flex-direction: column; }
+            .input-group button { width: 100%; }
+            .card { padding: 18px; }
+            .audio-container { padding: 20px; }
         }
     </style>
 </head>
@@ -117,7 +191,7 @@
             <option value="{{ scheme }}">{{ scheme }}</option>
             {% endfor %}
         </select>
-        <button onclick="simplifyScheme()">📖 వివరాలు చూడండి & 🎧 వినండి</button>
+        <button type="button" onclick="simplifyScheme()">📖 వివరాలు చూడండి & 🎧 వినండి</button>
     </div>
     
     <div id="result"></div>
@@ -136,8 +210,7 @@ async function simplifyScheme() {
         return;
     }
     
-    // Show loading indicator
-    document.getElementById('result').innerHTML = '<div style="text-align:center;">⏳ దయచేసి వేచి ఉండండి... Loading...</div>';
+    document.getElementById('result').innerHTML = '<div class="loader">⏳ దయచేసి వేచి ఉండండి... Loading...</div>';
     
     let res = await fetch('/simplify', {
         method: 'POST',
@@ -145,25 +218,30 @@ async function simplifyScheme() {
         body: JSON.stringify({scheme_name: name})
     });
     let data = await res.json();
+
+    if (!res.ok) {
+        document.getElementById('result').innerHTML = `<div class="loader">⚠️ అర్ధం కాలేదా? ${data.error || 'Scheme not found.'}</div>`;
+        return;
+    }
     
     let html = `
-        <h3>📘 English (Simplified)</h3>
+        <h3>📘 English Summary</h3>
         <div class='card'><h4>✅ Eligibility</h4> ${data.simplified.eligibility}</div>
         <div class='card'><h4>💰 Benefits</h4> ${data.simplified.benefits}</div>
-        <div class='card'><h4>📄 Documents Required</h4> ${data.simplified.documents}</div>
-        <div class='card'><h4>📌 Application Steps</h4> ${data.simplified.steps}</div>
+        <div class='card'><h4>📄 Documents</h4> ${data.simplified.documents}</div>
+        <div class='card'><h4>📌 How to Apply</h4> ${data.simplified.steps}</div>
         
         <hr>
         
-        <h3>📗 తెలుగు (Telugu)</h3>
+        <h3>📗 తెలుగు సారాంశం</h3>
         <div class='card'><h4>✅ అర్హత</h4> ${data.telugu.eligibility}</div>
         <div class='card'><h4>💰 ప్రయోజనాలు</h4> ${data.telugu.benefits}</div>
         <div class='card'><h4>📄 అవసరమైన పత్రాలు</h4> ${data.telugu.documents}</div>
         <div class='card'><h4>📌 దరఖాస్తు దశలు</h4> ${data.telugu.steps}</div>
         
         <div class='audio-container'>
-            <strong>🎧 తెలుగులో వినండి (Listen in Telugu)</strong><br>
-            <audio controls autoplay>
+            <strong>🎧 తెలుగులో వినండి / Listen in Telugu</strong>
+            <audio controls>
                 <source src='${data.voice_url}' type='audio/mpeg'>
                 Your browser does not support audio.
             </audio>
