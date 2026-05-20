@@ -163,5 +163,60 @@
     "documents_te": "పాఠశాల నమోదు వివరాలు.",
     "steps_te": "దశ 1: అర్హత గల పాఠశాలలో చేరండి. దశ 2: స్వయంచాలకంగా భోజనం పొందండి.",
     "audio_file": "static/audio/pm_poshan.mp3"
+  },
+  "National Health Mission (NHM)": {
+    "eligibility_en": "All citizens can access free primary, secondary, and tertiary public health services at government facilities.",
+    "benefits_en": "Free treatment, medicines, maternal and child health support, and disease prevention programs.",
+    "documents_en": "Aadhaar, ration card, local health ID, or any government-issued ID.",
+    "steps_en": "Step 1: Visit the nearest public health centre or wellness centre. Step 2: Register with staff. Step 3: Receive free care or medicines.",
+    "eligibility_te": "ప్రజలందరికీ ప్రభుత్వ సౌకర్యాల్లో ఉచిత ప్రాథమిక, ద్వితీయ మరియు తృతీయ ఆరోగ్య సేవలు అందుబాటులో ఉంటాయి.",
+    "benefits_te": "ఉచిత చికిత్స, ఉచిత మందులు, మాతృశిశు ఆరోగ్య మద్దతు, వ్యాధి నిరోధక కార్యక్రమాలు.",
+    "documents_te": "ఆధార్, రేషన్ కార్డ్, స్థానిక ఆరోగ్య ID లేదా ఇతర ప్రభుత్వం జారీ చేసిన గుర్తింపు.",
+    "steps_te": "దశ 1: దగ్గరలోని ప్రజా ఆరోగ్య కేంద్రం లేదా వెల్నెస్ సెంటర్‌కి వెళ్లండి. దశ 2: సిబ్బందితో నమోదు చేయండి. దశ 3: ఉచిత చికిత్స లేదా ఆహారం పొందండి.",
+    "audio_file": "static/audio/nhm.mp3"
+  },
+  "Mission Indradhanush": {
+    "eligibility_en": "Children under 5 years and pregnant women who need vaccination protection.",
+    "benefits_en": "Free vaccination against seven life-saving diseases and improved immunity for babies and mothers.",
+    "documents_en": "Mother's Aadhaar, child's birth record, and immunization card if available.",
+    "steps_en": "Step 1: Visit the nearest anganwadi, PHC, or vaccination camp. Step 2: Receive vaccines according to the schedule.",
+    "eligibility_te": "5 సంవత్సరాల దిగువ أطفال మరియు గర్భిణీ మహిళలు టీకాలను పొందవచ్చు.",
+    "benefits_te": "ఏడు ప్రాణ రక్షక వ్యాధుల కోసం ఉచిత టీకాలు, పిల్లలు మరియు తల్లికి మెరుగైన రోగ నిరోధక శక్తి.",
+    "documents_te": "మాతృకు ఆధార్, శిశువు పుట్టిన తేదీ రికార్డు, టీకా కార్డ్ ఉంటే.",
+    "steps_te": "దశ 1: దగ్గరలోని అంగన్వాడీ, PHC లేదా టీకా శిబిరానికి వెళ్లండి. దశ 2: షెడ్యూల్ ప్రకారం టీకాలు పొందండి.",
+    "audio_file": "static/audio/mission_indradhanush.mp3"
+  },
+  "National Mental Health Programme": {
+    "eligibility_en": "People with mental health concerns and their families seeking support.",
+    "benefits_en": "Free counselling, treatment, and referral services at government mental health centres.",
+    "documents_en": "Aadhaar and local health centre registration details.",
+    "steps_en": "Step 1: Visit the nearest government mental health service or hospital. Step 2: Register for counselling. Step 3: Follow the recommended treatment plan.",
+    "eligibility_te": "మానసిక ఆరోగ్య సమస్యలున్న వ్యక్తులు మరియు వారి కుటుంబాలు మద్దతు కోసం అందుబాటులో ఉంటారు.",
+    "benefits_te": "ప్రభుత్వ మానసిక ఆరోగ్య కేంద్రాల్లో ఉచిత పరామర్శ, చికిత్స మరియు సూచన సేవలు.",
+    "documents_te": "ఆధార్ మరియు స్థానిక ఆరోగ్య కేంద్ర నమోదు వివరాలు.",
+    "steps_te": "దశ 1: దగ్గరలోని ప్రభుత్వ మానసిక ఆరోగ్య సేవ లేదా ఆసుపత్రి వద్ద ఉదయించండి. దశ 2: పరిష్కారానికి నమోదు చేయండి. దశ 3: సూచించిన చికిత్సను అనుసరించండి.",
+    "audio_file": "static/audio/mental_health.mp3"
+  },
+  "Pradhan Mantri Swasthya Suraksha Yojana": {
+    "eligibility_en": "Patients needing advanced tertiary care at government hospitals.",
+    "benefits_en": "Improved infrastructure for specialist treatment and lower costs for high-quality care.",
+    "documents_en": "Aadhaar, referral from doctor, and hospital registration documents.",
+    "steps_en": "Step 1: Get a referral from an empaneled doctor. Step 2: Visit the tertiary hospital. Step 3: Complete admission and treatment.",
+    "eligibility_te": "ప్రభుత్వ ఆసుపత్రుల్లో అధిక స్థాయి తృతీయ చికిత్స అవసరమయ్యే రోగులకు చెల్లుబాటు.",
+    "benefits_te": "నిపుణుల చికిత్స కోసం మెరుగైన వసతులు మరియు అధిక నాణ్యత చికిత్సకు తక్కువ ఖర్చు.",
+    "documents_te": "ఆధార్, డాక్టర్ యొక్క సూచన, ఆసుపత్రి నమోదు పత్రాలు.",
+    "steps_te": "దశ 1: ఎంపానెల్ చేసిన డాక్టర్ నుండి సూచన పొందండి. దశ 2: తృతీయ ఆసుపత్రికి వెళ్లండి. దశ 3: నమోదు చేసి చికిత్సను పూర్తి చేయండి.",
+    "audio_file": "static/audio/pmssy.mp3"
+  },
+  "Ayushman Bharat Health and Wellness Centres": {
+    "eligibility_en": "All citizens can use local health and wellness centres for primary care, screening, and preventive services.",
+    "benefits_en": "Free basic health check-ups, medicines, screening for common diseases, and referral services.",
+    "documents_en": "Aadhaar or local identity card and any health record if available.",
+    "steps_en": "Step 1: Visit the nearest Health and Wellness Centre. Step 2: Register and share your concerns. Step 3: Receive free health check-up or medicines.",
+    "eligibility_te": "ప్రజలందరికీ స్థానిక ఆరోగ్య మరియు వెల్నెస్ సెంటర్లను ప్రాథమిక సంరక్షణ కోసం ఉపయోగించవచ్చు.",
+    "benefits_te": "ఉచిత ప్రాథమిక ఆరోగ్య తనఖా, మందులు, సాధారణ వ్యాధుల స్క్రీనింగ్ మరియు సూచనలు.",
+    "documents_te": "ఆధార్ లేదా స్థానిక గుర్తింపు పత్రం మరియు ఉన్నట్లయితే ఆరోగ్య రికార్డు.",
+    "steps_te": "దశ 1: దగ్గరలోని ఆరోగ్య మరియు వెల్నెస్ సెంటర్‌కి వెళ్లండి. దశ 2: నమోదు చేసి మీ సమస్యను తెలియజేయండి. దశ 3: ఉచిత ఆరోగ్య తనఖా లేదా మందులు పొందండి.",
+    "audio_file": "static/audio/abhwc.mp3"
   }
 }
