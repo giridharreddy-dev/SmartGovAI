@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartGov AI - స్మార్ట్గవ్ AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #1e3a8a;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #475569;
+            margin-bottom: 30px;
+        }
+        .input-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        select, button {
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+        }
+        select {
+            flex: 2;
+            min-width: 250px;
+            background: white;
+            cursor: pointer;
+        }
+        button {
+            background: #1e3a8a;
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #3b82f6;
+        }
+        .card {
+            background: #f8fafc;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 12px;
+            border-left: 5px solid #3b82f6;
+        }
+        .card h4 {
+            margin-top: 0;
+            color: #1e293b;
+        }
+        .audio-container {
+            background: #eef2ff;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+        }
+        .lang-badge {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-right: 10px;
+        }
+        hr {
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #64748b;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            select, button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🏥 SmartGov AI</h1>
+    <div class="subtitle">ప్రభుత్వ ఆరోగ్య పథకాల సరళీకరణ | Simplifying Government Healthcare Schemes</div>
+
+    <div class="input-group">
+        <select id="schemeSelect">
+            <option value="">-- ఒక పథకాన్ని ఎంచుకోండి --</option>
+            {% for scheme in schemes %}
+            <option value="{{ scheme }}">{{ scheme }}</option>
+            {% endfor %}
+        </select>
+        <button onclick="simplifyScheme()">📖 వివరాలు చూడండి & 🎧 వినండి</button>
+    </div>
+    
+    <div id="result"></div>
+    <footer>
+        💡 ఈ పథకాలు కేంద్ర & రాష్ట్ర ప్రభుత్వాల అధికారిక సమాచారం ఆధారంగా రూపొందించబడ్డాయి.<br>
+        మరింత సమాచారం కోసం మీ స్థానిక ప్రభుత్వ ఆసుపత్రిని సంప్రదించండి.
+    </footer>
+</div>
+
+<script>
+async function simplifyScheme() {
+    let select = document.getElementById('schemeSelect');
+    let name = select.value;
+    if (!name) {
+        alert("దయచేసి ఒక పథకాన్ని ఎంచుకోండి / Please select a scheme.");
+        return;
+    }
+    
+    // Show loading indicator
+    document.getElementById('result').innerHTML = '<div style="text-align:center;">⏳ దయచేసి వేచి ఉండండి... Loading...</div>';
+    
+    let res = await fetch('/simplify', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({scheme_name: name})
+    });
+    let data = await res.json();
+    
+    let html = `
+        <h3>📘 English (Simplified)</h3>
+        <div class='card'><h4>✅ Eligibility</h4> ${data.simplified.eligibility}</div>
+        <div class='card'><h4>💰 Benefits</h4> ${data.simplified.benefits}</div>
+        <div class='card'><h4>📄 Documents Required</h4> ${data.simplified.documents}</div>
+        <div class='card'><h4>📌 Application Steps</h4> ${data.simplified.steps}</div>
+        
+        <hr>
+        
+        <h3>📗 తెలుగు (Telugu)</h3>
+        <div class='card'><h4>✅ అర్హత</h4> ${data.telugu.eligibility}</div>
+        <div class='card'><h4>💰 ప్రయోజనాలు</h4> ${data.telugu.benefits}</div>
+        <div class='card'><h4>📄 అవసరమైన పత్రాలు</h4> ${data.telugu.documents}</div>
+        <div class='card'><h4>📌 దరఖాస్తు దశలు</h4> ${data.telugu.steps}</div>
+        
+        <div class='audio-container'>
+            <strong>🎧 తెలుగులో వినండి (Listen in Telugu)</strong><br>
+            <audio controls autoplay>
+                <source src='${data.voice_url}' type='audio/mpeg'>
+                Your browser does not support audio.
+            </audio>
+        </div>
+    `;
+    
+    document.getElementById('result').innerHTML = html;
+}
+
+// Optional: auto-trigger when user selects from dropdown
+document.getElementById('schemeSelect').addEventListener('change', function() {
+    if (this.value) {
+        simplifyScheme();
+    }
+});
+</script>
+</body>
+</html>
