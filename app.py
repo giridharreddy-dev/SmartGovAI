@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, jsonify
+from flask import Flask, render_template, request, jsonify, url_for
 import json
 
 app = Flask(__name__)
@@ -18,6 +18,10 @@ def simplify():
     
     if not data:
         return jsonify({'error': 'Scheme not found'}), 404
+
+    voice_path = data.get('audio_file', '')
+    if voice_path.startswith('static/'):
+        voice_path = voice_path[len('static/'):]
     
     # Return precomputed data (no translation, no TTS generation)
     return jsonify({
@@ -33,7 +37,7 @@ def simplify():
             'documents': data['documents_te'],
             'steps': data['steps_te']
         },
-        'voice_url': data['audio_file']
+        'voice_url': url_for('static', filename=voice_path)
     })
 
 if __name__ == '__main__':
