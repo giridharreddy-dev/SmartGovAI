@@ -1,262 +1,375 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>SmartGov AI - స్మార్ట్గవ్ AI</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>SmartGov AI | స్మార్ట్గవ్ AI</title>
     <style>
-        :root {
-            color-scheme: light;
-            --bg: #eaf4ff;
-            --surface: rgba(255,255,255,0.92);
-            --surface-strong: #ffffff;
-            --border: rgba(148, 163, 184, 0.22);
-            --text: #0f172a;
-            --muted: #475569;
-            --accent: #2563eb;
-            --accent-soft: #dbeafe;
-            --shadow: 0 28px 80px rgba(15, 23, 42, 0.12);
-        }
         * {
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Inter, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background: radial-gradient(circle at top, #f8fbff 0%, #e2efff 35%, #e8f2ff 100%);
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(145deg, #eef4ff 0%, #d9e6f7 100%);
             min-height: 100vh;
-            color: var(--text);
+            padding: 2rem 1rem;
+            color: #0a2540;
         }
-        .page {
-            width: min(1100px, calc(100% - 32px));
+
+        .container {
+            max-width: 1100px;
             margin: 0 auto;
-            padding: 32px 0 48px;
         }
+
+        /* header */
         .hero {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 30px;
-            box-shadow: var(--shadow);
-            padding: 32px 36px;
-            margin-bottom: 28px;
-            backdrop-filter: blur(12px);
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(6px);
+            border-radius: 2rem;
+            padding: 2rem 2rem;
+            box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+            border: 1px solid rgba(37, 99, 235, 0.2);
         }
+
         .hero h1 {
-            margin: 0 0 10px;
-            font-size: clamp(2.5rem, 3vw, 3.4rem);
-            letter-spacing: -0.04em;
-            color: #1f2937;
+            font-size: 2.2rem;
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 0.5rem;
         }
+
         .hero p {
-            margin: 0;
-            color: var(--muted);
+            color: #334155;
             font-size: 1.05rem;
-            line-height: 1.8;
-            max-width: 780px;
+            line-height: 1.5;
         }
-        .input-card {
-            display: grid;
-            gap: 16px;
-            background: var(--surface-strong);
-            border: 1px solid var(--border);
-            border-radius: 26px;
-            padding: 24px;
-            box-shadow: 0 20px 60px rgba(15, 23, 42, 0.08);
-            margin-bottom: 28px;
+
+        /* input cards */
+        .card-panel {
+            background: white;
+            border-radius: 1.8rem;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 25px -8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #e2e8f0;
         }
+
         .input-group {
             display: flex;
-            gap: 14px;
             flex-wrap: wrap;
-            align-items: center;
+            gap: 1rem;
+            align-items: flex-end;
+            margin-bottom: 1.2rem;
         }
-        .input-group select {
+
+        .input-group label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: #1e40af;
+            display: block;
+            margin-bottom: 0.2rem;
+        }
+
+        .input-group select,
+        .input-group input[type="file"] {
             flex: 1;
-            min-width: 240px;
-            border: 1px solid rgba(148, 163, 184, 0.35);
-            border-radius: 16px;
-            padding: 14px 16px;
-            background: white;
-            box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.05);
-            font-size: 1rem;
-            color: var(--text);
+            padding: 0.75rem 1rem;
+            border-radius: 1.2rem;
+            border: 1px solid #cbd5e1;
+            background: #fefefe;
+            font-size: 0.95rem;
+            transition: 0.2s;
         }
-        .input-group button {
-            min-width: 220px;
-            padding: 14px 18px;
-            border-radius: 16px;
+
+        .input-group select:focus,
+        .input-group input:focus {
+            outline: none;
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59,130,246,0.2);
+        }
+
+        button {
+            background: linear-gradient(95deg, #2563eb, #3b82f6);
             border: none;
-            cursor: pointer;
-            font-size: 1rem;
+            padding: 0.75rem 1.8rem;
+            border-radius: 2rem;
             font-weight: 600;
             color: white;
-            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
-            box-shadow: 0 16px 30px rgba(37, 99, 235, 0.22);
-            transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
-        }
-        .input-group button:hover {
-            transform: translateY(-1px);
-            box-shadow: 0 20px 36px rgba(37, 99, 235, 0.25);
-        }
-        .info-pill {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            background: rgba(37, 99, 235, 0.08);
-            color: #1e40af;
-            border-radius: 999px;
-            padding: 10px 16px;
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.2s;
+            box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
             font-size: 0.95rem;
-            width: fit-content;
         }
-        .result-grid {
-            display: grid;
-            gap: 22px;
+
+        button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
         }
-        .card {
-            background: white;
-            border-radius: 24px;
-            box-shadow: 0 16px 40px rgba(15, 23, 42, 0.06);
-            border: 1px solid rgba(148, 163, 184, 0.14);
-            padding: 22px;
-        }
-        .card h4 {
-            margin: 0 0 12px;
-            font-size: 1.05rem;
-            color: #0f172a;
-        }
-        .card p {
-            margin: 0;
-            color: #334155;
-            line-height: 1.8;
-        }
-        .audio-container {
-            background: #eff6ff;
-            border-radius: 24px;
-            border: 1px solid rgba(37, 99, 235, 0.18);
-            padding: 24px;
+
+        .or-divider {
             text-align: center;
-            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
+            font-size: 0.8rem;
+            color: #64748b;
+            margin: 0.8rem 0;
+            position: relative;
         }
-        .audio-container strong {
-            display: block;
-            margin-bottom: 14px;
-            font-size: 1rem;
-            color: #1e3a8a;
+        .or-divider span {
+            background: white;
+            padding: 0 1rem;
         }
+
+        /* result area */
+        .result-section {
+            margin-top: 2rem;
+        }
+
+        .lang-head {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 1.5rem 0 0.8rem 0;
+            border-left: 5px solid #2563eb;
+            padding-left: 1rem;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .info-card {
+            background: #ffffffdd;
+            backdrop-filter: blur(4px);
+            border-radius: 1.4rem;
+            padding: 1.2rem;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+            transition: 0.1s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .info-card h4 {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 1.1rem;
+            margin-bottom: 0.7rem;
+            color: #1e293b;
+            border-bottom: 2px solid #bfdbfe;
+            padding-bottom: 0.4rem;
+        }
+
+        .info-card p {
+            line-height: 1.5;
+            color: #2c3e50;
+            font-size: 0.95rem;
+        }
+
+        .audio-player {
+            background: linear-gradient(120deg, #eef2ff, #ffffff);
+            border-radius: 1.8rem;
+            padding: 1.2rem;
+            text-align: center;
+            margin: 1.5rem 0 1rem;
+            border: 1px solid #bfdbfe;
+        }
+
         audio {
             width: 100%;
-            max-width: 560px;
-            border-radius: 14px;
-            outline: none;
+            max-width: 450px;
+            margin-top: 0.6rem;
+            border-radius: 3rem;
         }
-        .footer {
-            text-align: center;
-            margin-top: 36px;
-            color: var(--muted);
-            font-size: 0.95rem;
-            line-height: 1.7;
-        }
-        .footer a {
-            color: #2563eb;
-            text-decoration: none;
-        }
+
         .loader {
-            padding: 26px 0;
-            color: #334155;
             text-align: center;
-            font-weight: 600;
+            padding: 2.5rem;
+            font-size: 1.1rem;
+            color: #2563eb;
+            background: #f8fafc;
+            border-radius: 2rem;
         }
-        @media (max-width: 760px) {
-            .page { padding: 24px 0 36px; }
-            .hero { padding: 26px 24px; }
-            .input-card { padding: 20px; }
-            .input-group { flex-direction: column; }
-            .input-group button { width: 100%; }
-            .card { padding: 18px; }
-            .audio-container { padding: 20px; }
+
+        hr {
+            margin: 1.5rem 0;
+            border-color: #cbd5e1;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2.5rem;
+            font-size: 0.8rem;
+            color: #475569;
+        }
+
+        @media (max-width: 720px) {
+            .hero h1 { font-size: 1.7rem; }
+            .input-group { flex-direction: column; align-items: stretch; }
+            button { width: 100%; }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <h1>🏥 SmartGov AI</h1>
-    <div class="subtitle">ప్రభుత్వ ఆరోగ్య పథకాల సరళీకరణ | Simplifying Government Healthcare Schemes</div>
-
-    <div class="input-group">
-        <select id="schemeSelect">
-            <option value="">-- ఒక పథకాన్ని ఎంచుకోండి --</option>
-            {% for scheme in schemes %}
-            <option value="{{ scheme }}">{{ scheme }}</option>
-            {% endfor %}
-        </select>
-        <button type="button" onclick="simplifyScheme()">📖 వివరాలు చూడండి & 🎧 వినండి</button>
+    <div class="hero">
+        <h1>🏥 SmartGov AI</h1>
+        <p>✨ AI-powered simplification of government health schemes — 
+        <strong>తెలుగు లో వినండి & చదవండి</strong><br>
+        Upload PDF or pick a scheme → Get simple English + Telugu + voice output</p>
     </div>
-    
-    <div id="result"></div>
+
+    <div class="card-panel">
+        <!-- Dropdown mode -->
+        <div class="input-group">
+            <div style="flex:2">
+                <label>📋 Choose a scheme (pre‑loaded)</label>
+                <select id="schemeSelect">
+                    <option value="">-- Select a scheme --</option>
+                    {% for scheme in schemes %}
+                    <option value="{{ scheme }}">{{ scheme }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <button id="dropdownBtn">🔍 Explain & Listen</button>
+        </div>
+
+        <div class="or-divider"><span>───── OR ─────</span></div>
+
+        <!-- PDF upload mode -->
+        <div class="input-group">
+            <div style="flex:2">
+                <label>📄 Upload any government scheme PDF (Hindi/English)</label>
+                <input type="file" id="pdfUpload" accept="application/pdf">
+            </div>
+            <button id="uploadBtn">📎 Upload & Simplify</button>
+        </div>
+        <p style="font-size:0.75rem; margin-top:8px; color:#475569;">✅ PDF text extracted → AI simplifies → Telugu audio generated on‑the‑fly.</p>
+    </div>
+
+    <div id="resultArea" class="result-section">
+        <!-- dynamic content appears here -->
+        <div class="loader" style="background:#eef2ff;">💡 Select a scheme or upload a PDF to begin</div>
+    </div>
+
     <footer>
-        💡 ఈ పథకాలు కేంద్ర & రాష్ట్ర ప్రభుత్వాల అధికారిక సమాచారం ఆధారంగా రూపొందించబడ్డాయి.<br>
-        మరింత సమాచారం కోసం మీ స్థానిక ప్రభుత్వ ఆసుపత్రిని సంప్రదించండి.
+        ⚡ Powered by Google Gemini AI • Real‑time simplification + translation • Telugu speech generated live
     </footer>
 </div>
 
 <script>
-async function simplifyScheme() {
-    let select = document.getElementById('schemeSelect');
-    let name = select.value;
-    if (!name) {
-        alert("దయచేసి ఒక పథకాన్ని ఎంచుకోండి / Please select a scheme.");
-        return;
+    // Helper to show loading state
+    function showLoading() {
+        document.getElementById('resultArea').innerHTML = '<div class="loader">⏳ AI is thinking & simplifying (10‑15 sec)... please wait</div>';
     }
-    
-    document.getElementById('result').innerHTML = '<div class="loader">⏳ దయచేసి వేచి ఉండండి... Loading...</div>';
-    
-    let res = await fetch('/simplify', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({scheme_name: name})
+
+    // Display result from API
+    function displayResult(data) {
+        if (data.error) {
+            document.getElementById('resultArea').innerHTML = `<div class="loader" style="color:#b91c1c;">❌ Error: ${data.error}</div>`;
+            return;
+        }
+
+        const html = `
+            <div class="lang-head">🇬🇧 English (Simplified)</div>
+            <div class="grid-2">
+                <div class="info-card"><h4>✅ Eligibility</h4><p>${escapeHtml(data.simplified.eligibility)}</p></div>
+                <div class="info-card"><h4>💰 Benefits</h4><p>${escapeHtml(data.simplified.benefits)}</p></div>
+                <div class="info-card"><h4>📄 Documents required</h4><p>${escapeHtml(data.simplified.documents)}</p></div>
+                <div class="info-card"><h4>📌 Application steps</h4><p>${escapeHtml(data.simplified.steps)}</p></div>
+            </div>
+
+            <div class="lang-head">🇮🇳 తెలుగు (Telugu Translation)</div>
+            <div class="grid-2">
+                <div class="info-card"><h4>✅ అర్హత</h4><p>${escapeHtml(data.telugu.eligibility)}</p></div>
+                <div class="info-card"><h4>💰 ప్రయోజనాలు</h4><p>${escapeHtml(data.telugu.benefits)}</p></div>
+                <div class="info-card"><h4>📄 అవసరమైన పత్రాలు</h4><p>${escapeHtml(data.telugu.documents)}</p></div>
+                <div class="info-card"><h4>📌 దరఖాస్తు దశలు</h4><p>${escapeHtml(data.telugu.steps)}</p></div>
+            </div>
+
+            <div class="audio-player">
+                <strong>🎧 తెలుగులో వినండి / Listen in Telugu (AI‑generated voice)</strong><br>
+                <audio controls src="${data.voice_url}"></audio>
+                <p style="font-size:0.75rem; margin-top:8px;">🔊 Audio matches the Telugu text above — generated live.</p>
+            </div>
+        `;
+        document.getElementById('resultArea').innerHTML = html;
+    }
+
+    // simple XSS protection
+    function escapeHtml(str) {
+        if (!str) return '';
+        return str.replace(/[&<>]/g, function(m) {
+            if (m === '&') return '&amp;';
+            if (m === '<') return '&lt;';
+            if (m === '>') return '&gt;';
+            return m;
+        }).replace(/[\uD800-\uDBFF][\uDC00-\uDFFF]/g, function(c) {
+            return c;
+        });
+    }
+
+    // ---- DROPDOWN submit (JSON) ----
+    async function handleDropdown() {
+        const select = document.getElementById('schemeSelect');
+        const schemeName = select.value;
+        if (!schemeName) {
+            alert("Please select a scheme from the list.");
+            return;
+        }
+        showLoading();
+        try {
+            const response = await fetch('/simplify', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ scheme_name: schemeName })
+            });
+            const data = await response.json();
+            displayResult(data);
+        } catch (err) {
+            document.getElementById('resultArea').innerHTML = `<div class="loader" style="color:#b91c1c;">⚠️ Network error: ${err.message}</div>`;
+        }
+    }
+
+    // ---- PDF UPLOAD (multipart/form-data) ----
+    async function handleUpload() {
+        const fileInput = document.getElementById('pdfUpload');
+        const file = fileInput.files[0];
+        if (!file) {
+            alert("Please select a PDF file to upload.");
+            return;
+        }
+        if (!file.name.toLowerCase().endsWith('.pdf')) {
+            alert("Only PDF files are allowed.");
+            return;
+        }
+        showLoading();
+        const formData = new FormData();
+        formData.append('document', file);
+        try {
+            const response = await fetch('/simplify', {
+                method: 'POST',
+                body: formData   // no Content-Type header -> browser sets multipart boundary
+            });
+            const data = await response.json();
+            displayResult(data);
+        } catch (err) {
+            document.getElementById('resultArea').innerHTML = `<div class="loader" style="color:#b91c1c;">❌ Upload error: ${err.message}</div>`;
+        }
+    }
+
+    // attach event listeners
+    document.getElementById('dropdownBtn').addEventListener('click', handleDropdown);
+    document.getElementById('uploadBtn').addEventListener('click', handleUpload);
+    // optional: press enter / auto trigger on scheme select?
+    document.getElementById('schemeSelect').addEventListener('change', function() {
+        if (this.value) handleDropdown();
     });
-    let data = await res.json();
-
-    if (!res.ok) {
-        document.getElementById('result').innerHTML = `<div class="loader">⚠️ అర్ధం కాలేదా? ${data.error || 'Scheme not found.'}</div>`;
-        return;
-    }
-    
-    let html = `
-        <h3>📘 English Summary</h3>
-        <div class='card'><h4>✅ Eligibility</h4> ${data.simplified.eligibility}</div>
-        <div class='card'><h4>💰 Benefits</h4> ${data.simplified.benefits}</div>
-        <div class='card'><h4>📄 Documents</h4> ${data.simplified.documents}</div>
-        <div class='card'><h4>📌 How to Apply</h4> ${data.simplified.steps}</div>
-        
-        <hr>
-        
-        <h3>📗 తెలుగు సారాంశం</h3>
-        <div class='card'><h4>✅ అర్హత</h4> ${data.telugu.eligibility}</div>
-        <div class='card'><h4>💰 ప్రయోజనాలు</h4> ${data.telugu.benefits}</div>
-        <div class='card'><h4>📄 అవసరమైన పత్రాలు</h4> ${data.telugu.documents}</div>
-        <div class='card'><h4>📌 దరఖాస్తు దశలు</h4> ${data.telugu.steps}</div>
-        
-        <div class='audio-container'>
-            <strong>🎧 తెలుగులో వినండి / Listen in Telugu</strong>
-            <audio controls>
-                <source src='${data.voice_url}' type='audio/mpeg'>
-                Your browser does not support audio.
-            </audio>
-        </div>
-    `;
-    
-    document.getElementById('result').innerHTML = html;
-}
-
-// Optional: auto-trigger when user selects from dropdown
-document.getElementById('schemeSelect').addEventListener('change', function() {
-    if (this.value) {
-        simplifyScheme();
-    }
-});
 </script>
 </body>
 </html>
