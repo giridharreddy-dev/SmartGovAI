@@ -1,82 +1,138 @@
 {
-  "Ayushman Bharat - PM-JAY": {
-    "original_complex_text": "Pradhan Mantri Jan Arogya Yojana (PM-JAY) is a flagship health insurance scheme offering comprehensive free health coverage of ₹5 lakh per family per year for secondary and tertiary hospitalization, with pre-existing diseases covered from day one. Eligibility extends to families listed in the Socio-Economic Caste Census (SECC) database, encompassing both rural and urban poor without any income limit. To apply, beneficiaries must visit their nearest Common Service Centre (CSC) or an empaneled hospital equipped with their Aadhaar card, ration card, SECC certificate, and an Aadhaar-linked mobile number to verify their identity. Once verified, applicants receive a PM-JAY e-card, enabling them to seamlessly avail cashless treatment across empaneled healthcare facilities.",
-    "audio_file": "static/audio/ayushman_bharat_pmjay.mp3"
-  },
-  "Janani Shishu Suraksha Karyakram": {
-    "original_complex_text": "Janani Shishu Suraksha Karyakram (JSSK) is an initiative designed to provide completely free and cashless delivery services, including normal and C-section deliveries, for all pregnant women at government health institutions, with similar benefits extending to sick newborns up to 30 days after birth. The comprehensive benefits include free medicines, diagnostics, blood transfusions, diet during the hospital stay, and free two-way transport between the home and the health facility. To avail of these services, beneficiaries must register with an Anganwadi or ASHA worker and visit a Primary Health Centre (PHC) or Community Health Centre (CHC) carrying essential documents such as an Aadhaar card, a Mother and Child Protection (MCP) card, and a referral slip if applicable.",
-    "audio_file": "static/audio/janani_shishu.mp3"
-  },
-  "Pradhan Mantri National Dialysis Programme": {
-    "original_complex_text": "The Pradhan Mantri National Dialysis Programme aims to provide vital, cashless dialysis services to Below Poverty Line (BPL) patients and individuals covered under state health insurance schemes. Eligible beneficiaries can avail of up to three free dialysis sessions per week at designated government-empaneled centers. The application process requires patients to first obtain a medical prescription for dialysis from a government hospital doctor, followed by registration at the nearest dialysis center. For each scheduled visit, patients must carry necessary documentation, including their Aadhaar card, BPL certificate, doctor's prescription, and any applicable health cards.",
-    "audio_file": "static/audio/dialysis.mp3"
-  },
-  "Rashtriya Bal Swasthya Karyakram": {
-    "original_complex_text": "Rashtriya Bal Swasthya Karyakram (RBSK) is a child health screening and early intervention scheme targeting children from birth up to 18 years of age, with a special focus on those enrolled in government schools and anganwadis. The programme guarantees free screening for 30 common health conditions encompassing birth defects, diseases, and developmental deficiencies, followed by completely free medical treatment, including necessary surgical interventions. The process begins with a mobile health team conducting comprehensive screenings at schools or anganwadis; if any medical condition is identified, the child is formally referred to a district hospital for treatment. Parents must provide the child's birth certificate or school ID along with the parent's Aadhaar card.",
-    "audio_file": "static/audio/bal_swasthya.mp3"
-  },
-  "Pradhan Mantri Matru Vandana Yojana": {
-    "original_complex_text": "Pradhan Mantri Matru Vandana Yojana (PMMVY) is a direct benefit transfer scheme designed to support all pregnant women and lactating mothers—excluding government employees—during their first live childbirth. The scheme provides a financial incentive of ₹5,000 paid directly into the beneficiary's bank account in scheduled installments to help offset nutritional and health-related expenses. To apply, eligible mothers must register at their local Anganwadi or Primary Health Centre (PHC) within the first four months of pregnancy by submitting their Aadhaar card, Mother and Child Protection (MCP) card, bank account passbook, and a passport-sized photograph.",
-    "audio_file": "static/audio/matru_vandana.mp3"
-  },
-  "PM Kisan Samman Nidhi": {
-    "original_complex_text": "PM Kisan Samman Nidhi is a vital income support initiative tailored for small and marginal farmer families who own cultivable land across the country. The scheme provides an annual financial benefit of ₹6,000, which is disbursed in three equal installments directly into the beneficiaries' bank accounts to support their agricultural and domestic needs. Farmers can apply by registering either through their local agriculture office or via the online portal, requiring the submission of crucial documents such as their Aadhaar card, active bank account details, and verified land records.",
-    "audio_file": "static/audio/pm_kisan.mp3"
-  },
-  "Pradhan Mantri Fasal Bima Yojana": {
-    "original_complex_text": "Pradhan Mantri Fasal Bima Yojana (PMFBY) is a comprehensive crop insurance scheme designed to protect farmers growing notified crops against financial losses arising from natural disasters, pests, and unforeseen crop failures. To secure this insurance coverage, eligible farmers must apply through their local bank branches or agriculture offices by providing their Aadhaar card, bank account details, verified land records, and specific crop details. After submitting the application and paying a subsidized premium, the crops are insured, allowing farmers to file a formal claim during crop loss to receive direct financial compensation.",
-    "audio_file": "static/audio/fasal_bima.mp3"
-  },
-  "Soil Health Card Scheme": {
-    "original_complex_text": "The Soil Health Card Scheme is an agricultural initiative accessible to all farmers, aimed at promoting sustainable farming practices through personalized soil testing and expert fertilizer recommendations. To participate, farmers must submit physical soil samples from their agricultural land along with their Aadhaar card and land details. These samples undergo rigorous laboratory testing to analyze nutrient content, after which a detailed Soil Health Card is issued to the farmer, outlining tailored recommendations to optimize fertilizer usage.",
-    "audio_file": "static/audio/soil_health.mp3"
-  },
-  "Sukanya Samriddhi Yojana": {
-    "original_complex_text": "Sukanya Samriddhi Yojana is a specialized high-interest savings scheme designed exclusively for families with a girl child below the age of 10 years, aimed at building a robust financial corpus for her future higher education and marriage expenses. To initiate the investment, parents or legal guardians must open an account at any authorized bank or post office branch by submitting the child's birth certificate alongside their own Aadhaar and identification documents. Once the account is established, parents are required to make regular, flexible deposits into the account.",
-    "audio_file": "static/audio/sukanya.mp3"
-  },
-  "Beti Bachao Beti Padhao": {
-    "original_complex_text": "Beti Bachao Beti Padhao is a nationwide welfare and awareness campaign focused on ensuring the survival, protection, and education of girl children while comprehensively supporting their families. The initiative provides systemic support and widespread community awareness to combat gender bias and promote girl child empowerment. Families seeking to engage with the scheme's benefits and activities must contact their local municipal authorities, anganwadis, or schools, providing an Aadhaar card and relevant local documents as required.",
-    "audio_file": "static/audio/beti_bachao.mp3"
-  },
   "Atal Pension Yojana": {
-    "original_complex_text": "Atal Pension Yojana is a government-backed, guaranteed pension scheme specifically targeted at citizens aged between 18 and 40 years who hold an active bank account, providing them with financial security in their old age. The scheme guarantees a fixed monthly pension upon reaching 60 years of age, proportionate to the contributor's investment. To enroll, eligible individuals must visit their respective bank branch, fill out the comprehensive APY registration form, submit their Aadhaar card and mobile number, and set up an auto-debit setup for regular contributions.",
-    "audio_file": "static/audio/atal_pension.mp3"
+    "audio_file": "static/audio/atal_pension.mp3",
+    "original_complex_text": "Atal Pension Yojana is a government-backed, guaranteed pension scheme specifically targeted at citizens aged between 18 and 40 years who hold an active bank account, providing them with financial security in their old age. The scheme guarantees a fixed monthly pension upon reaching 60 years of age, proportionate to the contributor's investment. To enroll, eligible individuals must visit their respective bank branch, fill out the comprehensive APY registration form, submit their Aadhaar card and mobile number, and set up an auto-debit setup for regular contributions."
   },
-  "National Scholarship Portal": {
-    "original_complex_text": "The National Scholarship Portal is a centralized digital platform providing streamlined access to various educational scholarships for eligible school and college students seeking financial assistance for their academic expenses. To apply, students must complete an online registration on the portal, select the appropriate scholarship, and upload critical documentation including their Aadhaar card, official income certificate, academic transcripts, and bank account details. The application then undergoes verification and approval before funds are disbursed.",
-    "audio_file": "static/audio/nsp.mp3"
-  },
-  "Vidya Lakshmi Education Loan": {
-    "original_complex_text": "The Vidya Lakshmi Education Loan portal is a dedicated, single-window online platform designed to assist students in securing educational loans for higher studies with minimal bureaucratic friction. The platform streamlines the application process by allowing students to register online, explore various loan products, and apply to multiple preferred banks using a single application form. To complete the process, applicants must upload their Aadhaar card, relevant academic documents, and familial income proof.",
-    "audio_file": "static/audio/vidya_lakshmi.mp3"
-  },
-  "eSanjeevani": {
-    "original_complex_text": "eSanjeevani is an innovative national telemedicine service that democratizes healthcare access by providing all citizens with free online medical consultations with qualified doctors from the comfort of their homes. To utilize this digital health platform, patients must register online using their mobile number and provide an ID if required, after which they can easily book a specific consultation time slot. During the scheduled appointment, the patient connects with a medical professional via a secure video or audio link.",
-    "audio_file": "static/audio/esanjeevani.mp3"
-  },
-  "PM POSHAN": {
-    "original_complex_text": "PM POSHAN is a critical nutritional welfare programme designed to provide hot, freshly cooked, and highly nutritious mid-day meals to students enrolled in government and government-aided schools across the nation. The scheme aims to simultaneously combat childhood malnutrition and improve school attendance rates. Beneficiaries simply need to be officially enrolled in an eligible school, with their school enrollment details properly recorded, after which they automatically receive these daily nutritious meals.",
-    "audio_file": "static/audio/pm_poshan.mp3"
-  },
-  "National Health Mission (NHM)": {
-    "original_complex_text": "The National Health Mission (NHM) is a sweeping public health framework ensuring that all citizens have equitable access to free primary, secondary, and tertiary healthcare services at government medical facilities. The mission offers an extensive array of benefits, including free medical treatment, essential medicines, comprehensive maternal and child health support, and proactive disease prevention programs. To access these critical health services, citizens must visit their nearest public health or wellness centre, present their Aadhaar, ration card, or local health ID, and register with the healthcare staff.",
-    "audio_file": "static/audio/nhm.mp3"
-  },
-  "Mission Indradhanush": {
-    "original_complex_text": "Mission Indradhanush is an aggressive immunization drive focused on providing free, life-saving vaccination protection to children under 5 years of age and pregnant women, fundamentally aiming to boost maternal and infant immunity against seven severe vaccine-preventable diseases. Eligible beneficiaries must simply visit their nearest Anganwadi center, Primary Health Centre (PHC), or a designated vaccination camp. By presenting the mother's Aadhaar, the child's birth record, and an existing immunization card if available, beneficiaries can seamlessly receive their required vaccines.",
-    "audio_file": "static/audio/mission_indradhanush.mp3"
-  },
-  "National Mental Health Programme": {
-    "original_complex_text": "The National Mental Health Programme (NMHP) provides crucial psychological support, free professional counselling, and comprehensive psychiatric treatment to individuals experiencing mental health concerns and their supportive families. Operating through designated government mental health centres, the initiative also facilitates advanced referral services when necessary. Patients or their guardians must visit the nearest government mental health facility or hospital, register for initial counselling using their Aadhaar and local health centre details, and follow the recommended treatment plan.",
-    "audio_file": "static/audio/mental_health.mp3"
-  },
-  "Pradhan Mantri Swasthya Suraksha Yojana": {
-    "original_complex_text": "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY) is a strategic healthcare infrastructure initiative designed to provide high-quality, advanced tertiary medical care at significantly lower costs for patients requiring specialist treatments at government hospitals. To navigate this system, a patient must first obtain a formal medical referral from an empaneled primary or secondary healthcare doctor. Equipped with this referral, alongside their Aadhaar and hospital registration documents, the patient must then visit the designated tertiary hospital to complete the formal admission.",
-    "audio_file": "static/audio/pmssy.mp3"
+  "Ayushman Bharat - PM-JAY": {
+    "audio_file": "static/audio/ayushman_bharat_pmjay.mp3",
+    "original_complex_text": "Pradhan Mantri Jan Arogya Yojana (PM-JAY) is a flagship health insurance scheme offering comprehensive free health coverage of ₹5 lakh per family per year for secondary and tertiary hospitalization, with pre-existing diseases covered from day one. Eligibility extends to families listed in the Socio-Economic Caste Census (SECC) database, encompassing both rural and urban poor without any income limit. To apply, beneficiaries must visit their nearest Common Service Centre (CSC) or an empaneled hospital equipped with their Aadhaar card, ration card, SECC certificate, and an Aadhaar-linked mobile number to verify their identity. Once verified, applicants receive a PM-JAY e-card, enabling them to seamlessly avail cashless treatment across empaneled healthcare facilities."
   },
   "Ayushman Bharat Health and Wellness Centres": {
-    "original_complex_text": "Ayushman Bharat Health and Wellness Centres (AB-HWCs) serve as the foundation of primary healthcare, open to all citizens for comprehensive health promotion, preventive care, and primary screening services. These decentralized local centres offer free basic health check-ups, essential medicines, vital screenings for common non-communicable diseases, and efficient referral services to specialized hospitals. To utilize these facilities, citizens simply need to visit their nearest wellness centre, register by sharing their health concerns and providing an Aadhaar or local identity card, and immediately receive cost-free medical care.",
-    "audio_file": "static/audio/abhwc.mp3"
+    "audio_file": "static/audio/abhwc.mp3",
+    "original_complex_text": "Ayushman Bharat Health and Wellness Centres (AB-HWCs) serve as the foundation of primary healthcare, open to all citizens for comprehensive health promotion, preventive care, and primary screening services. These decentralized local centres offer free basic health check-ups, essential medicines, vital screenings for common non-communicable diseases, and efficient referral services to specialized hospitals. To utilize these facilities, citizens simply need to visit their nearest wellness centre, register by sharing their health concerns and providing an Aadhaar or local identity card, and immediately receive cost-free medical care."
+  },
+  "Ayushman Bharat PM-JAY (AP – YSR Arogyasri)": {
+    "audio_file": "static/audio/arogyasri.mp3",
+    "original_complex_text": "Ayushman Bharat PM-JAY is a national health insurance scheme. In Andhra Pradesh, it is implemented as YSR Arogyasri. It provides free health coverage of ₹5 lakh per family per year for secondary and tertiary hospitalization. All families listed in SECC database are eligible. Apply at any empaneled hospital or Common Service Centre with Aadhaar and ration card. Beneficiaries receive a YSR Arogyasri card for cashless treatment."
+  },
+  "Beti Bachao Beti Padhao": {
+    "audio_file": "static/audio/beti_bachao.mp3",
+    "original_complex_text": "Beti Bachao Beti Padhao is a nationwide welfare and awareness campaign focused on ensuring the survival, protection, and education of girl children while comprehensively supporting their families. The initiative provides systemic support and widespread community awareness to combat gender bias and promote girl child empowerment. Families seeking to engage with the scheme's benefits and activities must contact their local municipal authorities, anganwadis, or schools, providing an Aadhaar card and relevant local documents as required."
+  },
+  "Jagananna Amma Vodi": {
+    "audio_file": "static/audio/amma_vodi.mp3",
+    "original_complex_text": "Jagananna Amma Vodi is an Andhra Pradesh scheme that gives ₹15,000 per year to mothers or guardians of school-going children (from Class 1 to Intermediate). The money is directly transferred to the mother's bank account, provided the child has at least 75% attendance. Eligibility: The mother must be a resident of AP and the child must study in a government or government-aided school. Documents: Aadhaar of mother and child, school admission certificate, bank passbook. Apply through the school headmaster or village secretariat."
+  },
+  "Jagananna Vidya Deevena": {
+    "audio_file": "static/audio/vidya_deevena.mp3",
+    "original_complex_text": "Jagananna Vidya Deevena is a fee reimbursement scheme for higher education students in Andhra Pradesh. It covers full tuition fees for all eligible students from ITI to PhD, including professional courses like engineering and medical. Eligibility: Family annual income below ₹2.5 lakh, student must have passed previous exam, and be enrolled in a recognized institution. Documents: Aadhaar, income certificate, caste certificate, previous year marksheet, bank account. Apply through the college principal or AP Jnanabhumi portal."
+  },
+  "Jal Jeevan Mission": {
+    "audio_file": "static/audio/jal_jeevan.mp3",
+    "original_complex_text": "Jal Jeevan Mission is a national scheme to provide tap water connection to every rural household in India. In Andhra Pradesh, the goal is to provide Functional Household Tap Connections (FHTC) to all villages. Every rural family is eligible. To get a connection, the family must apply at the Gram Panchayat office with Aadhaar and residence proof. The connection is free for BPL families; others pay a nominal fee."
+  },
+  "Janani Shishu Suraksha Karyakram": {
+    "audio_file": "static/audio/janani_shishu.mp3",
+    "original_complex_text": "Janani Shishu Suraksha Karyakram (JSSK) is an initiative designed to provide completely free and cashless delivery services, including normal and C-section deliveries, for all pregnant women at government health institutions, with similar benefits extending to sick newborns up to 30 days after birth. The comprehensive benefits include free medicines, diagnostics, blood transfusions, diet during the hospital stay, and free two-way transport between the home and the health facility. To avail of these services, beneficiaries must register with an Anganwadi or ASHA worker and visit a Primary Health Centre (PHC) or Community Health Centre (CHC) carrying essential documents such as an Aadhaar card, a Mother and Child Protection (MCP) card, and a referral slip if applicable."
+  },
+  "Mission Indradhanush": {
+    "audio_file": "static/audio/mission_indradhanush.mp3",
+    "original_complex_text": "Mission Indradhanush is an aggressive immunization drive focused on providing free, life-saving vaccination protection to children under 5 years of age and pregnant women, fundamentally aiming to boost maternal and infant immunity against seven severe vaccine-preventable diseases. Eligible beneficiaries must simply visit their nearest Anganwadi center, Primary Health Centre (PHC), or a designated vaccination camp. By presenting the mother's Aadhaar, the child's birth record, and an existing immunization card if available, beneficiaries can seamlessly receive their required vaccines."
+  },
+  "National Health Mission (NHM)": {
+    "audio_file": "static/audio/nhm.mp3",
+    "original_complex_text": "The National Health Mission (NHM) is a sweeping public health framework ensuring that all citizens have equitable access to free primary, secondary, and tertiary healthcare services at government medical facilities. The mission offers an extensive array of benefits, including free medical treatment, essential medicines, comprehensive maternal and child health support, and proactive disease prevention programs. To access these critical health services, citizens must visit their nearest public health or wellness centre, present their Aadhaar, ration card, or local health ID, and register with the healthcare staff."
+  },
+  "National Mental Health Programme": {
+    "audio_file": "static/audio/mental_health.mp3",
+    "original_complex_text": "The National Mental Health Programme (NMHP) provides crucial psychological support, free professional counselling, and comprehensive psychiatric treatment to individuals experiencing mental health concerns and their supportive families. Operating through designated government mental health centres, the initiative also facilitates advanced referral services when necessary. Patients or their guardians must visit the nearest government mental health facility or hospital, register for initial counselling using their Aadhaar and local health centre details, and follow the recommended treatment plan."
+  },
+  "National Scholarship Portal": {
+    "audio_file": "static/audio/nsp.mp3",
+    "original_complex_text": "The National Scholarship Portal is a centralized digital platform providing streamlined access to various educational scholarships for eligible school and college students seeking financial assistance for their academic expenses. To apply, students must complete an online registration on the portal, select the appropriate scholarship, and upload critical documentation including their Aadhaar card, official income certificate, academic transcripts, and bank account details. The application then undergoes verification and approval before funds are disbursed."
+  },
+  "PM Kisan Samman Nidhi": {
+    "audio_file": "static/audio/pm_kisan.mp3",
+    "original_complex_text": "PM Kisan Samman Nidhi is a vital income support initiative tailored for small and marginal farmer families who own cultivable land across the country. The scheme provides an annual financial benefit of ₹6,000, which is disbursed in three equal installments directly into the beneficiaries' bank accounts to support their agricultural and domestic needs. Farmers can apply by registering either through their local agriculture office or via the online portal, requiring the submission of crucial documents such as their Aadhaar card, active bank account details, and verified land records."
+  },
+  "PM POSHAN": {
+    "audio_file": "static/audio/pm_poshan.mp3",
+    "original_complex_text": "PM POSHAN is a critical nutritional welfare programme designed to provide hot, freshly cooked, and highly nutritious mid-day meals to students enrolled in government and government-aided schools across the nation. The scheme aims to simultaneously combat childhood malnutrition and improve school attendance rates. Beneficiaries simply need to be officially enrolled in an eligible school, with their school enrollment details properly recorded, after which they automatically receive these daily nutritious meals."
+  },
+  "Pradhan Mantri Fasal Bima Yojana": {
+    "audio_file": "static/audio/fasal_bima.mp3",
+    "original_complex_text": "Pradhan Mantri Fasal Bima Yojana (PMFBY) is a comprehensive crop insurance scheme designed to protect farmers growing notified crops against financial losses arising from natural disasters, pests, and unforeseen crop failures. To secure this insurance coverage, eligible farmers must apply through their local bank branches or agriculture offices by providing their Aadhaar card, bank account details, verified land records, and specific crop details. After submitting the application and paying a subsidized premium, the crops are insured, allowing farmers to file a formal claim during crop loss to receive direct financial compensation."
+  },
+  "Pradhan Mantri Matru Vandana Yojana": {
+    "audio_file": "static/audio/matru_vandana.mp3",
+    "original_complex_text": "Pradhan Mantri Matru Vandana Yojana (PMMVY) is a direct benefit transfer scheme designed to support all pregnant women and lactating mothers—excluding government employees—during their first live childbirth. The scheme provides a financial incentive of ₹5,000 paid directly into the beneficiary's bank account in scheduled installments to help offset nutritional and health-related expenses. To apply, eligible mothers must register at their local Anganwadi or Primary Health Centre (PHC) within the first four months of pregnancy by submitting their Aadhaar card, Mother and Child Protection (MCP) card, bank account passbook, and a passport-sized photograph."
+  },
+  "Pradhan Mantri National Dialysis Programme": {
+    "audio_file": "static/audio/dialysis.mp3",
+    "original_complex_text": "The Pradhan Mantri National Dialysis Programme aims to provide vital, cashless dialysis services to Below Poverty Line (BPL) patients and individuals covered under state health insurance schemes. Eligible beneficiaries can avail of up to three free dialysis sessions per week at designated government-empaneled centers. The application process requires patients to first obtain a medical prescription for dialysis from a government hospital doctor, followed by registration at the nearest dialysis center. For each scheduled visit, patients must carry necessary documentation, including their Aadhaar card, BPL certificate, doctor's prescription, and any applicable health cards."
+  },
+  "Pradhan Mantri Swasthya Suraksha Yojana": {
+    "audio_file": "static/audio/pmssy.mp3",
+    "original_complex_text": "Pradhan Mantri Swasthya Suraksha Yojana (PMSSY) is a strategic healthcare infrastructure initiative designed to provide high-quality, advanced tertiary medical care at significantly lower costs for patients requiring specialist treatments at government hospitals. To navigate this system, a patient must first obtain a formal medical referral from an empaneled primary or secondary healthcare doctor. Equipped with this referral, alongside their Aadhaar and hospital registration documents, the patient must then visit the designated tertiary hospital to complete the formal admission."
+  },
+  "Rashtriya Bal Swasthya Karyakram": {
+    "audio_file": "static/audio/bal_swasthya.mp3",
+    "original_complex_text": "Rashtriya Bal Swasthya Karyakram (RBSK) is a child health screening and early intervention scheme targeting children from birth up to 18 years of age, with a special focus on those enrolled in government schools and anganwadis. The programme guarantees free screening for 30 common health conditions encompassing birth defects, diseases, and developmental deficiencies, followed by completely free medical treatment, including necessary surgical interventions. The process begins with a mobile health team conducting comprehensive screenings at schools or anganwadis; if any medical condition is identified, the child is formally referred to a district hospital for treatment. Parents must provide the child's birth certificate or school ID along with the parent's Aadhaar card."
+  },
+  "Soil Health Card Scheme": {
+    "audio_file": "static/audio/soil_health.mp3",
+    "original_complex_text": "The Soil Health Card Scheme is an agricultural initiative accessible to all farmers, aimed at promoting sustainable farming practices through personalized soil testing and expert fertilizer recommendations. To participate, farmers must submit physical soil samples from their agricultural land along with their Aadhaar card and land details. These samples undergo rigorous laboratory testing to analyze nutrient content, after which a detailed Soil Health Card is issued to the farmer, outlining tailored recommendations to optimize fertilizer usage."
+  },
+  "Sukanya Samriddhi Yojana": {
+    "audio_file": "static/audio/sukanya.mp3",
+    "original_complex_text": "Sukanya Samriddhi Yojana is a specialized high-interest savings scheme designed exclusively for families with a girl child below the age of 10 years, aimed at building a robust financial corpus for her future higher education and marriage expenses. To initiate the investment, parents or legal guardians must open an account at any authorized bank or post office branch by submitting the child's birth certificate alongside their own Aadhaar and identification documents. Once the account is established, parents are required to make regular, flexible deposits into the account."
+  },
+  "Vidya Lakshmi Education Loan": {
+    "audio_file": "static/audio/vidya_lakshmi.mp3",
+    "original_complex_text": "The Vidya Lakshmi Education Loan portal is a dedicated, single-window online platform designed to assist students in securing educational loans for higher studies with minimal bureaucratic friction. The platform streamlines the application process by allowing students to register online, explore various loan products, and apply to multiple preferred banks using a single application form. To complete the process, applicants must upload their Aadhaar card, relevant academic documents, and familial income proof."
+  },
+  "YSR Aarogyasri": {
+    "audio_file": "static/audio/arogyasri.mp3",
+    "original_complex_text": "YSR Aarogyasri is a health insurance scheme in Andhra Pradesh that provides free medical treatment to eligible families. It covers hospitalization expenses up to ₹5 lakh per family per year for secondary and tertiary care. Eligibility is based on the SECC database, targeting economically weaker sections. To apply, beneficiaries must visit an empaneled hospital or Common Service Centre with their Aadhaar card and ration card. Upon verification, they receive a YSR Aarogyasri card for cashless treatment at empaneled healthcare facilities."
+  },
+  "YSR Aarogyasri Health Care Facilities": {
+    "audio_file": "static/audio/arogyasri_facilities.mp3",
+    "original_complex_text": "YSR Aarogyasri Health Care Facilities refer to the network of hospitals and healthcare centers that are empaneled under the YSR Aarogyasri scheme in Andhra Pradesh. These facilities provide a wide range of medical services, including inpatient and outpatient care, surgeries, diagnostics, and emergency services. The empaneled hospitals are strategically located across the state to ensure accessibility for all eligible beneficiaries, allowing them to receive quality healthcare services without any financial burden."
+  },
+  "YSR Aarogyasri Health Care Services": {
+    "audio_file": "static/audio/arogyasri_services.mp3",
+    "original_complex_text": "YSR Aarogyasri Health Care Services encompass the range of medical treatments and healthcare facilities provided under the YSR Aarogyasri scheme in Andhra Pradesh. These services include secondary and tertiary care for various medical conditions, covering hospitalization, surgeries, diagnostics, and post-operative care. The services are delivered through a network of empaneled hospitals across the state, ensuring that eligible beneficiaries receive timely and quality healthcare without financial burden."
+  },
+  "YSR Aarogyasri Health Care Trust": {
+    "audio_file": "static/audio/arogyasri_trust.mp3",
+    "original_complex_text": "YSR Aarogyasri Health Care Trust is a dedicated organization established to manage and implement the YSR Aarogyasri health insurance scheme in Andhra Pradesh. The trust oversees the administration of the scheme, ensuring efficient delivery of healthcare services to eligible beneficiaries. It coordinates with empaneled hospitals, manages funds, and monitors the overall functioning of the scheme to provide quality healthcare to the economically weaker sections of society."
+  },
+  "YSR Aarogyasri Plus": {
+    "audio_file": "static/audio/arogyasri_plus.mp3",
+    "original_complex_text": "YSR Aarogyasri Plus is an enhanced version of the YSR Aarogyasri health insurance scheme in Andhra Pradesh. It provides additional coverage of ₹5 lakh per family per year, totaling ₹10 lakh when combined with the original scheme. This expanded coverage includes more medical procedures and treatments, ensuring comprehensive healthcare for eligible families. To avail of YSR Aarogyasri Plus, beneficiaries must already be enrolled in the original YSR Aarogyasri scheme and can apply through the same channels using their existing YSR Aarogyasri card."
+  },
+  "YSR Aasara": {
+    "audio_file": "static/audio/ysr_aasara.mp3",
+    "original_complex_text": "YSR Aasara is a women empowerment scheme in Andhra Pradesh that provides interest-free loans up to ₹1,00,000 to eligible self-help groups (SHGs). The government also provides a 25% subsidy on loan repayment. All women SHG members who have been actively saving for six months can avail this benefit. Documents needed: Aadhaar card, SHG passbook, bank account details. Apply through the village secretariat or DRDA office."
+  },
+  "YSR Cheyutha": {
+    "audio_file": "static/audio/cheyutha.mp3",
+    "original_complex_text": "YSR Cheyutha provides financial assistance of ₹18,750 per year to women from SC, ST, BC, and minority communities aged 45 to 60 years in Andhra Pradesh. The scheme aims to support them for four years. Eligibility: Women in the target age group belonging to the listed communities, with an annual family income below ₹1,00,000. Documents: Aadhaar card, income certificate, community certificate, bank account. Apply through the village secretariat or MeeSeva center."
+  },
+  "YSR Pension Kanuka": {
+    "audio_file": "static/audio/pension_kanuka.mp3",
+    "original_complex_text": "YSR Pension Kanuka is a social security pension scheme in Andhra Pradesh. Eligible categories include old age (above 60), widows, disabled persons, and weavers. Pension amounts range from ₹2,250 to ₹3,000 per month depending on category. Apply at village secretariat with Aadhaar, age proof, and category-specific certificate. The pension is disbursed on the 1st of every month through bank or post office."
+  },
+  "YSR Rythu Bharosa": {
+    "audio_file": "static/audio/ysr_rythu_bharosa.mp3",
+    "original_complex_text": "YSR Rythu Bharosa is an Andhra Pradesh government scheme that provides financial assistance of ₹13,500 per year to every farmer family for crop investment. The amount is given in three installments: ₹7,500 for kharif, ₹4,000 for rabi, and ₹2,000 for sowing. All land-owning farmers in AP are eligible, including tenant farmers who have cultivation rights. Required documents: Aadhaar card, land records (patta), bank account linked to Aadhaar. To apply, farmers must register at their village Rythu Bharosa Kendralu (RBK) or through the AP e-Crop portal."
+  },
+  "YSR Sunna Vaddi": {
+    "audio_file": "static/audio/sunna_vaddi.mp3",
+    "original_complex_text": "YSR Sunna Vaddi (Zero Interest) scheme provides interest-free loans up to ₹75,000 for SC, ST, BC, and minority women entrepreneurs in Andhra Pradesh. The loan is for income-generating activities like small business, dairy, or tailoring. Eligible women must be members of SHGs and have a good repayment record. Documents: Aadhaar, Caste certificate, SHG passbook, business plan. Apply through the nearest bank branch or DRDA office."
+  },
+  "eSanjeevani": {
+    "audio_file": "static/audio/esanjeevani.mp3",
+    "original_complex_text": "eSanjeevani is an innovative national telemedicine service that democratizes healthcare access by providing all citizens with free online medical consultations with qualified doctors from the comfort of their homes. To utilize this digital health platform, patients must register online using their mobile number and provide an ID if required, after which they can easily book a specific consultation time slot. During the scheduled appointment, the patient connects with a medical professional via a secure video or audio link."
   }
 }
