@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Scheme Analytics</title></head>
+<body>
+<h1>📊 Scheme Feedback Analytics</h1>
+<table border="1">
+    <tr><th>Scheme</th><th>Feedback Count</th><th>Average Rating</th></tr>
+    {% for name, count, rating in stats %}
+    <tr>
+        <td>{{ name }}</td>
+        <td>{{ count }}</td>
+        <td>{{ rating if rating else 'No ratings' }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<p><a href="/">← Back to main</a></p>
+</body>
+</html>
